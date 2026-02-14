@@ -1,7 +1,12 @@
 import { ABOUT, CAREER, BLOG } from "@/lib/data";
+import { getNowPlaying } from "@/lib/spotify";
 import Typewriter from "@/components/Typewriter";
 
-export default function Home() {
+export const revalidate = 30;
+
+export default async function Home() {
+    const listening = await getNowPlaying();
+
     return (
         <div className="page">
 
@@ -56,6 +61,37 @@ export default function Home() {
                     ))}
                 </div>
             </section>
+
+            {/* ─── Listening ─── */}
+            {listening && (
+                <section className="listening fade-in">
+                    <div className="section-label">Listening</div>
+                    <div className="blog-list">
+                        <a
+                            href={listening.url}
+                            className="blog-item"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span className="blog-date">{listening.artist}</span>
+                            <span className="blog-title">{listening.track}</span>
+                            {listening.isLive ? (
+                                <span className="listening-live">
+                                    <span className="listening-live-dot" />
+                                    <span className="listening-live-text">Live</span>
+                                </span>
+                            ) : (
+                                <span className="listening-live">
+                                    <span className="listening-ago-dot" />
+                                    <span className="listening-live-text">
+                                        {listening.playedAt ?? "recently"}
+                                    </span>
+                                </span>
+                            )}
+                        </a>
+                    </div>
+                </section>
+            )}
 
             {/* ─── Footer ─── */}
             <footer className="footer fade-in">
