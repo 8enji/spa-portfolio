@@ -1,4 +1,5 @@
 import { ABOUT, CAREER, BLOG } from "@/lib/data";
+import Typewriter from "@/components/Typewriter";
 
 export default function Home() {
     return (
@@ -7,7 +8,7 @@ export default function Home() {
             {/* ─── Header ─── */}
             <header className="header fade-in">
                 <h1 className="header-name">Benjamin Charest</h1>
-                <p className="header-subtitle">Software Engineer</p>
+                <p className="header-subtitle"><Typewriter /></p>
             </header>
 
             {/* ─── About ─── */}

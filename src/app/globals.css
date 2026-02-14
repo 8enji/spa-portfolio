@@ -20,7 +20,7 @@
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-mono: 'JetBrains Mono', 'SF Mono', 'Cascadia Code', 'Fira Code', monospace;
     --content-width: 580px;
-    --section-gap: 72px;
+    --section-gap: 56px;
 }
 
 /* =========================================
@@ -49,16 +49,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Dot grid background */
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    background-image: radial-gradient(circle, var(--bg-dot) 1px, transparent 1px);
-    background-size: 24px 24px;
-    pointer-events: none;
-}
 
 ::selection {
     background: rgba(255, 255, 255, 0.15);
@@ -88,7 +78,9 @@ a:focus-visible {
 .page {
     max-width: var(--content-width);
     margin: 0 auto;
-    padding: 64px 24px 96px;
+    padding: 48px 24px 72px;
+    position: relative;
+    z-index: 1;
 }
 
 /* =========================================
@@ -111,6 +103,14 @@ a:focus-visible {
     font-size: 15px;
     font-weight: 400;
     color: var(--fg-muted);
+    min-height: 1.7em;
+}
+
+.typewriter-cursor {
+    color: var(--accent);
+    font-weight: 300;
+    margin-left: 1px;
+    transition: opacity 0.1s ease;
 }
 
 /* =========================================

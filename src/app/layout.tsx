@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import InteractiveGrid from "@/components/InteractiveGrid";
 
 export const metadata: Metadata = {
     title: "Benjamin Charest — Software Engineer",
@@ -13,7 +14,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body>{children}</body>
+            <body>
+                <InteractiveGrid />
+                {children}
+            </body>
         </html>
     );
 }

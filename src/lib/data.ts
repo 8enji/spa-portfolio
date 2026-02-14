@@ -24,28 +24,13 @@ export const CAREER = [
 
 export const BLOG = [
     {
-        title: "Building with Constraints",
-        date: "2024-12-15",
+        title: "Mostly Pedaling Across America",
+        date: "2026-wip",
         url: "#",
     },
     {
-        title: "On Simplicity in Software",
-        date: "2024-09-22",
-        url: "#",
-    },
-    {
-        title: "Lessons from Shipping Fast",
-        date: "2024-06-10",
-        url: "#",
-    },
-    {
-        title: "Design Systems That Scale",
-        date: "2024-03-04",
-        url: "#",
-    },
-    {
-        title: "The Case for Monorepos",
-        date: "2023-11-18",
+        title: "Letting Agents Write Code",
+        date: "2026-wip",
         url: "#",
     },
 ];
