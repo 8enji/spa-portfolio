@@ -123,7 +123,7 @@ a:hover {
 
 .about-text a {
     color: var(--fg);
-    text-decoration-color: var(--fg-dim);
+    text-decoration-color: rgba(232, 115, 90, 0.3);
     text-underline-offset: 3px;
     text-decoration: underline;
     transition: text-decoration-color 0.15s ease, color 0.15s ease;
@@ -198,14 +198,18 @@ a:hover {
 
 .career-role {
     color: var(--fg-muted);
+    text-transform: none;
 }
 
 .career-date {
     color: var(--fg-dim);
+    text-transform: none;
 }
 
 .career-separator {
     color: var(--fg-dim);
+    text-transform: none;
+    font-size: 10px;
 }
 
 /* =========================================

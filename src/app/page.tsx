@@ -35,7 +35,7 @@ export default function Home() {
                             </div>
                             <div className="career-right">
                                 <span className="career-role">{item.role}</span>
-                                <span className="career-separator">,</span>
+                                <span className="career-separator">·</span>
                                 <span className="career-date">{item.period}</span>
                             </div>
                         </div>
@@ -58,7 +58,7 @@ export default function Home() {
 
             {/* ─── Footer ─── */}
             <footer className="footer fade-in">
-                <span>© 2025</span>
+                <span>© 2026</span>
                 <div className="footer-links">
                     <a href="#">Twitter</a>
                     <a href="#">GitHub</a>
