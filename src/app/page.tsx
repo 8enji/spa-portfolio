@@ -6,7 +6,7 @@ export default function Home() {
 
             {/* ─── Header ─── */}
             <header className="header fade-in">
-                <h1 className="header-name">Ben</h1>
+                <h1 className="header-name">Benjamin Charest</h1>
                 <p className="header-subtitle">Software Engineer</p>
             </header>
 
@@ -60,9 +60,9 @@ export default function Home() {
             <footer className="footer fade-in">
                 <span>© 2026</span>
                 <div className="footer-links">
-                    <a href="#">Twitter</a>
-                    <a href="#">GitHub</a>
-                    <a href="mailto:hello@example.com">Email</a>
+                    <a href="https://github.com/8enji">GitHub</a>
+                    <a href="https://www.linkedin.com/in/ben-charest/">LinkedIn</a>
+                    <a href="mailto:b.charest04@gmail.com">Email</a>
                 </div>
             </footer>
 

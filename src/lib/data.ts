@@ -1,42 +1,24 @@
 export const ABOUT = {
-    bio: `I'm a software engineer focused on building thoughtful, well-crafted products. I enjoy working across the stack — from distributed systems to polished user interfaces. You can find my work on `,
+    bio: `I’m a Software Engineer focused on designing simple, maintainable systems that solve real problems. When I’m not coding, I’m rock climbing, reading, or experimenting with writing. You can find my work on `,
     bioLinks: {
-        github: { text: "GitHub", url: "https://github.com" },
+        github: { text: "GitHub", url: "https://github.com/8enji" },
         suffix: " or reach out ",
-        email: { text: "via email", url: "mailto:hello@example.com" },
+        email: { text: "via email", url: "mailto:b.charest04@gmail.com" },
     },
 };
 
 export const CAREER = [
     {
-        company: "Acme Corp",
-        role: "Senior Engineer",
-        period: "2024–",
-        dotColor: "#6ea8fe",
-    },
-    {
-        company: "Starlight Labs",
+        company: "Netflix",
         role: "Software Engineer",
-        period: "2022–2024",
-        dotColor: "#b88cff",
+        period: "2025–",
+        dotColor: "#E50914",
     },
     {
-        company: "Nebula Systems",
-        role: "Engineer",
-        period: "2021–2022",
-        dotColor: "#888",
-    },
-    {
-        company: "Pixel Works",
-        role: "Frontend Developer",
-        period: "2020–2021",
-        dotColor: "#f28cb1",
-    },
-    {
-        company: "CodeBridge",
+        company: "Amazon",
         role: "Intern",
-        period: "2019–2020",
-        dotColor: "#6dd4c8",
+        period: "2024–2024",
+        dotColor: "#FEBD69",
     },
 ];
 
