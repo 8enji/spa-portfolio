@@ -119,7 +119,7 @@ export async function getNowPlaying(): Promise<SpotifyTrack | null> {
 
         return null;
     } catch (err) {
-        console.error("[Spotify]", err);
+        console.error("[Spotify]", err instanceof Error ? err.message : "Unknown error");
         return null;
     }
 }
