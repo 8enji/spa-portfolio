@@ -206,11 +206,15 @@ export default function InteractiveGrid() {
             animationId = requestAnimationFrame(draw);
         }
 
-        // Resize observer
-        const resizeObserver = new ResizeObserver(() => {
+        // Resize on window resize
+        function onResize() {
             resize();
             if (isStatic) drawStatic();
-        });
+        }
+        window.addEventListener("resize", onResize);
+
+        // Resize observer (catches zoom, layout changes)
+        const resizeObserver = new ResizeObserver(onResize);
         resizeObserver.observe(document.documentElement);
 
         return () => {
@@ -218,6 +222,7 @@ export default function InteractiveGrid() {
             window.removeEventListener("mousemove", onMouseMove);
             window.removeEventListener("mouseleave", onMouseLeave);
             window.removeEventListener("click", onClick);
+            window.removeEventListener("resize", onResize);
             resizeObserver.disconnect();
         };
     }, []);
