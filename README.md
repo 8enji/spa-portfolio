@@ -1,4 +1,4 @@
-check it out! [bencharest.com](www.bencharest.com)
+check it out! [bencharest.com](https://www.bencharest.com)
 
 figured it was time to update my personal website...
 
