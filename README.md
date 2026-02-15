@@ -1,7 +1,9 @@
-figured it was time to update my personal website....
+check it out! [bencharest.com](www.bencharest.com)
+
+figured it was time to update my personal website...
 
 here is my shot at a minimalistic single page application. 
 
-<img width="3104" height="2252" alt="Screenshot 2026-02-14 at 10 14 43 AM" src="https://github.com/user-attachments/assets/41884984-a8aa-4601-a7c8-d353b7273209" />
+<img width="1648" height="1712" alt="Screenshot 2026-02-15 at 1 48 19 PM" src="https://github.com/user-attachments/assets/407688d0-78bf-4f6c-b95c-cbc4867ff582" />
 
 side note: antigravity >>> 
