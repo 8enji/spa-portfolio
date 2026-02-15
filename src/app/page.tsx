@@ -73,8 +73,14 @@ export default async function Home() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <span className="blog-date">{listening.artist}</span>
-                            <span className="blog-title">{listening.track}</span>
+                            <span className="listening-desktop-order">
+                                <span className="artist">{listening.artist}</span>
+                                <span className="song-name">{listening.track}</span>
+                            </span>
+                            <span className="listening-mobile-order">
+                                <span className="song-name">{listening.track}</span>
+                                <span className="artist">{listening.artist}</span>
+                            </span>
                             {listening.isLive ? (
                                 <span className="listening-live">
                                     <span className="listening-live-dot" />
