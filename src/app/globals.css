@@ -183,7 +183,7 @@ a:focus-visible {
     height: 8px;
     border-radius: 50%;
     flex-shrink: 0;
-    filter: blur(0.5px);
+    filter: blur(1px);
 }
 
 .career-company {
