@@ -12,7 +12,7 @@ export default async function Home() {
 
             {/* ─── Header ─── */}
             <header className="header fade-in">
-                <h1 className="header-name">Benjamin Charest</h1>
+                <h1 className="header-name">Ben Charest</h1>
                 <p className="header-subtitle"><Typewriter /></p>
             </header>
 

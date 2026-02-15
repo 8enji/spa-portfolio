@@ -3,8 +3,8 @@ import "./globals.css";
 import InteractiveGrid from "@/components/InteractiveGrid";
 
 export const metadata: Metadata = {
-    title: "Benjamin Charest — Software Engineer",
-    description: "Software engineer focused on building thoughtful, well-crafted products.",
+    title: "Ben Charest",
+    description: "Software engineer focused on designing simple, maintainable systems that solve real problems",
 };
 
 export default function RootLayout({
