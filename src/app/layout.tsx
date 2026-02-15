@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import InteractiveGrid from "@/components/InteractiveGrid";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
     title: "Ben Charest",
@@ -17,6 +18,7 @@ export default function RootLayout({
             <body>
                 <InteractiveGrid />
                 {children}
+                <Analytics />
             </body>
         </html>
     );
