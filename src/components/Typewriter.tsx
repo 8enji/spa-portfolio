@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from "react";
 
 const ROLES = [
     "Software Engineer",
-    "Aspiring Writer",
+    "Occasional Writer",
     "Rock Climber",
     "Explorer",
 ];
