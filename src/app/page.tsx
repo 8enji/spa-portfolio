@@ -1,4 +1,4 @@
-import { ABOUT, CAREER, BLOG } from "@/lib/data";
+import { ABOUT, CAREER } from "@/lib/data";
 import { getNowPlaying } from "@/lib/spotify";
 import Typewriter from "@/components/Typewriter";
 
@@ -52,14 +52,7 @@ export default async function Home() {
             {/* ─── Blog ─── */}
             <section className="blog fade-in">
                 <div className="section-label">Writing</div>
-                <div className="blog-list">
-                    {BLOG.map((post) => (
-                        <a key={post.title} href={post.url} className="blog-item">
-                            <span className="blog-date">{post.date}</span>
-                            <span className="blog-title">{post.title}</span>
-                        </a>
-                    ))}
-                </div>
+                <p className="writing-placeholder">working on some stuff. soon.</p>
             </section>
 
             {/* ─── Listening ─── */}

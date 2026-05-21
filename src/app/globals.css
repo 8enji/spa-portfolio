@@ -228,6 +228,13 @@ a:focus-visible {
     margin-bottom: var(--section-gap);
 }
 
+.writing-placeholder {
+    font-size: 14px;
+    color: var(--fg-dim);
+    padding: 8px 12px;
+    margin: 0;
+}
+
 .blog-list {
     display: flex;
     flex-direction: column;
